@@ -9,6 +9,13 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+
+import {
+  MatFormFieldModule,
+  matFormFieldAnimations,
+} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -17,7 +24,15 @@ import { MatIconModule } from '@angular/material/icon';
     FooterComponent,
     TerceiroComponenteComponent,
   ],
-  imports: [BrowserModule, MatSidenavModule, MatListModule, MatIconModule],
+  imports: [
+    BrowserModule,
+    MatSidenavModule,
+    MatListModule,
+    MatIconModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatButtonModule,
+  ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })

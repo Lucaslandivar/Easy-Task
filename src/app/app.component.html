@@ -1,65 +1,63 @@
 <body>
   <app-navbar></app-navbar>
-  <div class="container">
-    <div class="navbar-container">
-      <mat-drawer-container class="example-container" autosize>
-        <div class="example-sidenav-content">
-          <button type="button" mat-button (click)="drawer.toggle()">
-            Toggle sidenav
-          </button>
-        </div>
-      </mat-drawer-container>
-      <mat-drawer #drawer class="example-sidenav" mode="side">
-        <mat-selection-list (click)="drawer.toggle()" #shoes [multiple]="false">
-          @for (shoe of typesOfShoes; track shoe) {
-          <mat-list-option [value]="shoe">{{ shoe }}</mat-list-option>
-          }
-        </mat-selection-list>
-      </mat-drawer>
-    </div>
-    <main>
-      <div class="main-banner">
-        <h1>Tarefa do IATec Academy</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum soluta
-          earum esse inventore officia numquam quos enim! Esse, dolores eos,
-          alias cupiditate nihil odit dicta, quam ipsa quibusdam doloribus
-          magnam.
-        </p>
-      </div>
-      <section class="services-container">
-        <ul>
-          <li>
-            <h3>Originalidade</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
-              deserunt consequatur repudiandae, corporis aliquid porro aperiam!
-              Eligendi enim exercitationem cupiditate, nobis non debitis
-              expedita architecto iusto. Suscipit ipsam soluta doloribus.
-            </p>
-          </li>
-          <li>
-            <h3>Performance</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              rem vero sed esse expedita voluptatibus iure temporibus deserunt
-              distinctio voluptatem?
-            </p>
-          </li>
-          <li>
-            <h3>Nota 10/10</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </li>
-        </ul>
-      </section>
-      <section class="searchdomain-container">
-        <h2>Este é o meu terceiro componente</h2>
-        <p>O meu terceiro componente está dentro do botão</p>
-        <button type="button" class="app-terceiro-componente">
-          Ir para componente
+  <div class="navbar-container">
+    <mat-drawer-container class="example-container" autosize>
+      <div class="example-sidenav-content">
+        <button type="button" mat-button (click)="drawer.toggle()">
+          Toggle sidenav
         </button>
-      </section>
-    </main>
-    <app-footer></app-footer>
+      </div>
+    </mat-drawer-container>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <mat-selection-list (click)="drawer.toggle()" #shoes [multiple]="false">
+        @for (shoe of typesOfShoes; track shoe) {
+        <mat-list-option [value]="shoe">{{ shoe }}</mat-list-option>
+        }
+      </mat-selection-list>
+    </mat-drawer>
+    <div class="container">
+      <main>
+        <div class="main-banner">
+          <mat-card>
+            <mat-card-title>Entre em Contacto:</mat-card-title>
+            <mat-card-content> </mat-card-content>
+          </mat-card>
+        </div>
+        <section class="services-container">
+          <ul>
+            <li>
+              <h3>Originalidade</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                deserunt consequatur repudiandae, corporis aliquid porro
+                aperiam! Eligendi enim exercitationem cupiditate, nobis non
+                debitis expedita architecto iusto. Suscipit ipsam soluta
+                doloribus.
+              </p>
+            </li>
+            <li>
+              <h3>Performance</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia rem vero sed esse expedita voluptatibus iure temporibus
+                deserunt distinctio voluptatem?
+              </p>
+            </li>
+            <li>
+              <h3>Nota 10/10</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+          </ul>
+        </section>
+        <section class="searchdomain-container">
+          <h2>Este é o meu terceiro componente</h2>
+          <p>O meu terceiro componente está dentro do botão</p>
+          <button type="button" class="app-terceiro-componente">
+            Ir para componente
+          </button>
+        </section>
+      </main>
+      <app-footer></app-footer>
+    </div>
   </div>
 </body>
