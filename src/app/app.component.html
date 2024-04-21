@@ -1,7 +1,21 @@
 <body>
+  <app-navbar></app-navbar>
   <div class="container">
     <div class="navbar-container">
-      <app-navbar></app-navbar>
+      <mat-drawer-container class="example-container" autosize>
+        <div class="example-sidenav-content">
+          <button type="button" mat-button (click)="drawer.toggle()">
+            Toggle sidenav
+          </button>
+        </div>
+      </mat-drawer-container>
+      <mat-drawer #drawer class="example-sidenav" mode="side">
+        <mat-selection-list (click)="drawer.toggle()" #shoes [multiple]="false">
+          @for (shoe of typesOfShoes; track shoe) {
+          <mat-list-option [value]="shoe">{{ shoe }}</mat-list-option>
+          }
+        </mat-selection-list>
+      </mat-drawer>
     </div>
     <main>
       <div class="main-banner">

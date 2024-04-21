@@ -7,6 +7,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TerceiroComponenteComponent } from './otros/terceiro-componente/terceiro-componente.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     FooterComponent,
     TerceiroComponenteComponent,
   ],
-  imports: [BrowserModule, MatSidenavModule],
+  imports: [BrowserModule, MatSidenavModule, MatListModule, MatIconModule],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })

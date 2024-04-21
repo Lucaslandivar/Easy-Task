@@ -4,18 +4,35 @@ nav {
   padding: 10px 0;
 }
 
-.example-container {
-  width: 100%;
-  height: 100px;
+.navbar-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.example-sidenav-content {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+.navbar-items li {
+  display: inline-block;
+  margin-right: 15px;
 }
 
-.example-sidenav {
-  padding: 20px;
+.navbar-items li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-items li a:hover {
+  background-color: #555;
+}
+
+.default-btn {
+  background-color: #007bff;
+  border: none;
+}
+
+.default-btn:hover {
+  background-color: #0056b3;
 }

@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-iatec';
+  showFiller = false;
+  typesOfShoes: string[] = ['Home', 'Contacts', 'About'];
 }
