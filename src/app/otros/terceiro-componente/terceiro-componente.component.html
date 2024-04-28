@@ -1,23 +1,44 @@
 <mat-card>
   <mat-card-title>Entre em Contacto:</mat-card-title>
   <mat-card-content>
-    <form class="contact-form">
+    <div class="contact-form">
       <mat-form-field>
         <mat-label>Nome</mat-label>
-        <input matInput placeholder="Informe um nome" />
+        <input
+          required
+          [(ngModel)]="nome"
+          name="nome"
+          matInput
+          placeholder="Informe um nome"
+        />
       </mat-form-field>
 
       <mat-form-field>
         <mat-label>Email</mat-label>
-        <input type="email" placeholder="Informe um email" matInput />
+        <input
+          required
+          [(ngModel)]="email"
+          name="email"
+          type="email"
+          placeholder="Informe um email"
+          matInput
+        />
       </mat-form-field>
 
       <mat-form-field>
         <mat-label>Mensagem</mat-label>
-        <textarea matInput placeholder="Informe um nome"></textarea>
+        <textarea
+          required
+          [(ngModel)]="mensagem"
+          name="mensagem"
+          matInput
+          placeholder="Informe um nome"
+        ></textarea>
       </mat-form-field>
 
-      <button mat-flat-button color="primary">Enviar</button>
-    </form>
+      <button mat-flat-button (click)="enviarFormulario()" color="primary">
+        Enviar
+      </button>
+    </div>
   </mat-card-content>
 </mat-card>

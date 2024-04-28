@@ -17,6 +17,7 @@ import {
   MatFormFieldModule,
   matFormFieldAnimations,
 } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import {
     MatFormFieldModule,
     MatButtonModule,
     MatInputModule,
+    FormsModule,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
