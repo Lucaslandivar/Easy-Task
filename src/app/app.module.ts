@@ -18,6 +18,7 @@ import {
   matFormFieldAnimations,
 } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     FooterComponent,
     TerceiroComponenteComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
