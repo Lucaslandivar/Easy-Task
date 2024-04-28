@@ -1,1 +1,23 @@
-<p>terceiro-componente works!</p>
+<mat-card>
+  <mat-card-title>Entre em Contacto:</mat-card-title>
+  <mat-card-content>
+    <form class="contact-form">
+      <mat-form-field>
+        <mat-label>Nome</mat-label>
+        <input matInput placeholder="Informe um nome" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input type="email" placeholder="Informe um email" matInput />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Mensagem</mat-label>
+        <textarea matInput placeholder="Informe um nome"></textarea>
+      </mat-form-field>
+
+      <button mat-flat-button color="primary">Enviar</button>
+    </form>
+  </mat-card-content>
+</mat-card>

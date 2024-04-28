@@ -24,6 +24,8 @@ body {
   padding: 10rem;
   line-height: 40px;
   margin: 5px;
+  display: flex;
+  justify-content: center;
 }
 
 .main-banner h1,

@@ -11,6 +11,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
 
 import {
   MatFormFieldModule,
@@ -32,6 +33,7 @@ import {
     MatCardModule,
     MatFormFieldModule,
     MatButtonModule,
+    MatInputModule,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
