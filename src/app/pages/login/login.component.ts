@@ -10,7 +10,7 @@ export class LoginComponent {
   password: string = '';
   mensagemLogin: string = '';
 
-  // constructor(private router: Router) {}
+  // constructor(private router: Router) {} Erro
 
   btnLogin(): void {
     if (this.username == 'admin' && this.password == 'admin') {
