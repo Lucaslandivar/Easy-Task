@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { MatToolbar, MatToolbarModule } from '@angular/material/toolbar';
 
 import {
   MatFormFieldModule,
@@ -38,6 +39,7 @@ import { LoginComponent } from './pages/login/login.component';
     MatButtonModule,
     MatInputModule,
     FormsModule,
+    MatToolbar,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],

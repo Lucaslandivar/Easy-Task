@@ -1,16 +1,13 @@
 <nav>
-  <ul class="navbar-items">
-    <li>
-      <a href="#">Casa</a>
-    </li>
-    <li>
-      <a href="#">Nomes</a>
-    </li>
-    <li>
-      <a href="#">Contato</a>
-    </li>
-    <li>
-      <a href="#" class="default-btn">Entrar</a>
-    </li>
-  </ul>
+  <mat-toolbar>
+    <button
+      (click)="showMenu()"
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+  </mat-toolbar>
 </nav>

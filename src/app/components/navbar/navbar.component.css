@@ -36,3 +36,7 @@ nav {
 .default-btn:hover {
   background-color: #0056b3;
 }
+
+.example-spacer {
+  flex: 1 1 auto;
+}
